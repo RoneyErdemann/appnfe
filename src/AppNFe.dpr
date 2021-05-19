@@ -7,7 +7,9 @@ uses
   NFe.Model.Fiscal.NFe.Componentes.Interfaces in 'Model\Fiscal\NFe\Componentes\NFe.Model.Fiscal.NFe.Componentes.Interfaces.pas',
   NFe.Model.Fiscal.NFe.Componentes.Factory in 'Model\Fiscal\NFe\Componentes\NFe.Model.Fiscal.NFe.Componentes.Factory.pas',
   NFe.Model.Fiscal.NFe in 'Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.pas',
-  NFe.Model.Fiscal.NFe.Interfaces in 'Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.Interfaces.pas';
+  NFe.Model.Fiscal.NFe.Interfaces in 'Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.Interfaces.pas',
+  NFe.Model.Fiscal.NFe.Invoker in 'Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.Invoker.pas',
+  NFe.Model.Fiscal.NFe.Command.Geral in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Geral.pas';
 
 {$R *.res}
 

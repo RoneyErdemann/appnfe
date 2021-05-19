@@ -24,7 +24,9 @@ Type
 implementation
 
 uses
-  NFe.Model.Fiscal.NFe.Componentes.Factory;
+  NFe.Model.Fiscal.NFe.Componentes.Factory,
+  NFe.Model.Fiscal.NFe.Invoker,
+  NFe.Model.Fiscal.NFe.Command.Geral;
 
 { TModelFiscalNFe }
 
@@ -54,6 +56,9 @@ end;
 function TModelFiscalNFe.Gerar: iModelFiscalNFe;
 begin
   Result := Self;
+  TModelFiscalNFeInvoker.New
+    .Add(TModelFiscalNFeCommandGeral.New(Self))
+  .Execute;
   FComponente._this.NotasFiscais.GerarNFe;
 end;
 

@@ -115,6 +115,8 @@
         <DCCReference Include="Model\Fiscal\NFe\Componentes\NFe.Model.Fiscal.NFe.Componentes.Factory.pas"/>
         <DCCReference Include="Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.pas"/>
         <DCCReference Include="Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.Interfaces.pas"/>
+        <DCCReference Include="Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.Invoker.pas"/>
+        <DCCReference Include="Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Geral.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
