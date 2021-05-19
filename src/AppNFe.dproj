@@ -85,6 +85,8 @@
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
+        <DCC_ExeOutput>.\bin</DCC_ExeOutput>
+        <DCC_DcuOutput>.\dcu</DCC_DcuOutput>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -111,6 +113,8 @@
         </DCCReference>
         <DCCReference Include="Model\Fiscal\NFe\Componentes\NFe.Model.Fiscal.NFe.Componentes.Interfaces.pas"/>
         <DCCReference Include="Model\Fiscal\NFe\Componentes\NFe.Model.Fiscal.NFe.Componentes.Factory.pas"/>
+        <DCCReference Include="Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.pas"/>
+        <DCCReference Include="Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.Interfaces.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -137,7 +141,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="Win32\Debug\AppNFe.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="bin\AppNFe.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>AppNFe.exe</RemoteName>
                         <Overwrite>true</Overwrite>

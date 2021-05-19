@@ -5,7 +5,9 @@ uses
   NFe.View.Main in 'View\Pages\NFe.View.Main.pas' {Form1},
   NFe.Model.Fiscal.NFe.Componentes.ACbr in 'Model\Fiscal\NFe\Componentes\ACbr\NFe.Model.Fiscal.NFe.Componentes.ACbr.pas' {dmACBrNFe: TDataModule},
   NFe.Model.Fiscal.NFe.Componentes.Interfaces in 'Model\Fiscal\NFe\Componentes\NFe.Model.Fiscal.NFe.Componentes.Interfaces.pas',
-  NFe.Model.Fiscal.NFe.Componentes.Factory in 'Model\Fiscal\NFe\Componentes\NFe.Model.Fiscal.NFe.Componentes.Factory.pas';
+  NFe.Model.Fiscal.NFe.Componentes.Factory in 'Model\Fiscal\NFe\Componentes\NFe.Model.Fiscal.NFe.Componentes.Factory.pas',
+  NFe.Model.Fiscal.NFe in 'Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.pas',
+  NFe.Model.Fiscal.NFe.Interfaces in 'Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.Interfaces.pas';
 
 {$R *.res}
 
