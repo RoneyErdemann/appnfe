@@ -3,13 +3,16 @@ unit NFe.Model.Fiscal.NFe.Componentes.Interfaces;
 interface
 
 uses
-  ACBrNFe;
+  ACBrNFe,
+  ACBrNFeNotasFiscais;
 
 type
 
   iModelFiscalNFeComponentes<T> = interface
     ['{EF53F7ED-F51F-412F-B14B-CB4B240FA534}']
     function _this : T;
+    function AddNotaFiscal : NotaFiscal;
+    function NotaFiscal : NotaFiscal;
   end;
 
   iModelFiscalNFeFactory = interface

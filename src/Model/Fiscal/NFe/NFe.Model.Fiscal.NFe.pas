@@ -56,6 +56,8 @@ end;
 function TModelFiscalNFe.Gerar: iModelFiscalNFe;
 begin
   Result := Self;
+  FComponente._this.NotasFiscais.Clear;
+  FComponente.AddNotaFiscal;
   TModelFiscalNFeInvoker.New
     .Add(TModelFiscalNFeCommandGeral.New(Self))
   .Execute;
