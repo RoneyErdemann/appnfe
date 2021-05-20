@@ -39,7 +39,8 @@ end;
 function TModelFiscalNFeCommandInfAdic.Execute: iCommand;
 begin
   Result := Self;
-  FParent.Component.NotaFiscal.NFe.InfAdic.infCpl := 'Informações complementares';
+  FParent.Component.NotaFiscal.NFe.InfAdic.infCpl     :=  'Informações complementares';
+  FParent.Component.NotaFiscal.NFe.InfAdic.infAdFisco :=  '';
 end;
 
 class function TModelFiscalNFeCommandInfAdic.New(Parent : iModelFiscalNFe): iCommand;

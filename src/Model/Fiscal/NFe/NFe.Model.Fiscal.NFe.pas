@@ -38,7 +38,11 @@ uses
   NFe.Model.Fiscal.NFe.Command.Cobr.Fat,
   NFe.Model.Fiscal.NFe.Command.InfAdic,
   NFe.Model.Fiscal.NFe.Command.InfAdicObsComp,
-  NFe.Model.Fiscal.NFe.Command.InfAdicObsFisco;
+  NFe.Model.Fiscal.NFe.Command.InfAdicObsFisco,
+  NFe.Model.Fiscal.NFe.Command.Exporta,
+  NFe.Model.Fiscal.NFe.Command.Compra,
+  NFe.Model.Fiscal.NFe.Command.Pagamento,
+  NFe.Model.Fiscal.NFe.Command.GerarNFe;
 
 { TModelFiscalNFe }
 
@@ -84,6 +88,10 @@ begin
     .Add(TModelFiscalNFeCommandInfAdic.New(Self))
     .Add(TModelFiscalNFeCommandInfAdicObsComp.New(Self))
     .Add(TModelFiscalNFeCommandInfAdicObsFisco.New(Self))
+    .Add(TModelFiscalNFeCommandExporta.New(Self))
+    .Add(TModelFiscalNFeCommandCompra.New(Self))
+    .Add(TModelFiscalNFeCommandPagamento.New(Self))
+    .Add(TModelFiscalNFeCommandGerarNFe.New(Self))
   .Execute;
   FComponente._this.NotasFiscais.GerarNFe;
 end;

@@ -21,7 +21,11 @@ uses
   NFe.Model.Fiscal.NFe.Command.Cobr.Fat in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Cobr.Fat.pas',
   NFe.Model.Fiscal.NFe.Command.InfAdic in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.InfAdic.pas',
   NFe.Model.Fiscal.NFe.Command.InfAdicObsComp in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.InfAdicObsComp.pas',
-  NFe.Model.Fiscal.NFe.Command.InfAdicObsFisco in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.InfAdicObsFisco.pas';
+  NFe.Model.Fiscal.NFe.Command.InfAdicObsFisco in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.InfAdicObsFisco.pas',
+  NFe.Model.Fiscal.NFe.Command.Exporta in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Exporta.pas',
+  NFe.Model.Fiscal.NFe.Command.Compra in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Compra.pas',
+  NFe.Model.Fiscal.NFe.Command.Pagamento in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Pagamento.pas',
+  NFe.Model.Fiscal.NFe.Command.GerarNFe in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.GerarNFe.pas';
 
 {$R *.res}
 
