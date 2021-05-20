@@ -32,7 +32,8 @@ uses
   NFe.Model.Fiscal.NFe.Command.Dest,
   NFe.Model.Fiscal.NFe.Command.Prod,
   NFe.Model.Fiscal.NFe.Command.Total,
-  NFe.Model.Fiscal.NFe.Command.Transp;
+  NFe.Model.Fiscal.NFe.Command.Transp,
+  NFe.Model.Fiscal.NFe.Command.Cobr.Dup;
 
 { TModelFiscalNFe }
 
@@ -72,6 +73,7 @@ begin
     .Add(TModelFiscalNFeCommandProd.New(Self))
     .Add(TModelFiscalNFeCommandTotal.New(Self))
     .Add(TModelFiscalNFeCommandTransp.New(Self))
+    .Add(TModelFiscalNFeCommandCobrDup.New(Self))
   .Execute;
   FComponente._this.NotasFiscais.GerarNFe;
 end;

@@ -16,6 +16,8 @@ type
     function NotaFiscal : NotaFiscal;
     function AddProduto : TDetCollectionItem;
     function Produto : TDetCollectionItem;
+    function AddDuplicata : TDupCollectionItem;
+    function Duplicata : TDupCollectionItem;
   end;
 
   iModelFiscalNFeFactory = interface

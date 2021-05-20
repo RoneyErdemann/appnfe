@@ -23,6 +23,7 @@ type
     { Private declarations }
     FNotaFiscal : NotaFiscal;
     FProduto : TDetCollectionItem;
+    FDuplicata : TDupCollectionItem;
   public
     { Public declarations }
     function _this : TACBrNFe;
@@ -30,6 +31,8 @@ type
     function NotaFiscal : NotaFiscal;
     function AddProduto : TDetCollectionItem;
     function Produto : TDetCollectionItem;
+    function AddDuplicata : TDupCollectionItem;
+    function Duplicata : TDupCollectionItem;
     class function New : iModelFiscalNFeComponentes<TACBrNFe>;
   end;
 
@@ -41,6 +44,12 @@ implementation
 
 { TdmACBrNFe }
 
+function TdmACBrNFe.AddDuplicata: TDupCollectionItem;
+begin
+  FDuplicata := FNotaFiscal.NFe.Cobr.Dup.New;
+  Result := FDuplicata;
+end;
+
 function TdmACBrNFe.AddNotaFiscal: NotaFiscal;
 begin
   FNotaFiscal := ACBrNFe.NotasFiscais.Add;
@@ -51,6 +60,11 @@ function TdmACBrNFe.AddProduto: TDetCollectionItem;
 begin
   FProduto := FNotaFiscal.NFe.Det.New;
   Result := FProduto;
+end;
+
+function TdmACBrNFe.Duplicata: TDupCollectionItem;
+begin
+  Result := FDuplicata;
 end;
 
 class function TdmACBrNFe.New: iModelFiscalNFeComponentes<TACBrNFe>;
