@@ -9,7 +9,9 @@ uses
   NFe.Model.Fiscal.NFe in 'Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.pas',
   NFe.Model.Fiscal.NFe.Interfaces in 'Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.Interfaces.pas',
   NFe.Model.Fiscal.NFe.Invoker in 'Model\Fiscal\NFe\NFe.Model.Fiscal.NFe.Invoker.pas',
-  NFe.Model.Fiscal.NFe.Command.Geral in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Geral.pas';
+  NFe.Model.Fiscal.NFe.Command.Geral in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Geral.pas',
+  NFe.Model.Fiscal.NFe.Command.Ide in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Ide.pas',
+  NFe.Model.Fiscal.NFe.Command.Emit in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Emit.pas';
 
 {$R *.res}
 

@@ -26,7 +26,9 @@ implementation
 uses
   NFe.Model.Fiscal.NFe.Componentes.Factory,
   NFe.Model.Fiscal.NFe.Invoker,
-  NFe.Model.Fiscal.NFe.Command.Geral;
+  NFe.Model.Fiscal.NFe.Command.Geral,
+  NFe.Model.Fiscal.NFe.Command.Ide,
+  NFe.Model.Fiscal.NFe.Command.Emit;
 
 { TModelFiscalNFe }
 
@@ -60,6 +62,8 @@ begin
   FComponente.AddNotaFiscal;
   TModelFiscalNFeInvoker.New
     .Add(TModelFiscalNFeCommandGeral.New(Self))
+    .Add(TModelFiscalNFeCommandIde.New(self))
+    .Add(TModelFiscalNFeCommandEmitente.New(Self))
   .Execute;
   FComponente._this.NotasFiscais.GerarNFe;
 end;
