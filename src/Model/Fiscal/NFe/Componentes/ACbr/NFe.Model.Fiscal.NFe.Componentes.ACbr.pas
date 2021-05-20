@@ -13,7 +13,7 @@ uses
   ACBrNFeDANFEClass,
   ACBrNFeDANFeRLClass,
   ACBrNFeNotasFiscais,
-  NFe.Model.Fiscal.NFe.Componentes.Interfaces;
+  NFe.Model.Fiscal.NFe.Componentes.Interfaces, pcnNFe;
 
 type
   TdmACBrNFe = class(TDataModule, iModelFiscalNFeComponentes<TACBrNFe>)
@@ -22,11 +22,14 @@ type
   private
     { Private declarations }
     FNotaFiscal : NotaFiscal;
+    FProduto : TDetCollectionItem;
   public
     { Public declarations }
     function _this : TACBrNFe;
     function AddNotaFiscal : NotaFiscal;
     function NotaFiscal : NotaFiscal;
+    function AddProduto : TDetCollectionItem;
+    function Produto : TDetCollectionItem;
     class function New : iModelFiscalNFeComponentes<TACBrNFe>;
   end;
 
@@ -44,6 +47,12 @@ begin
   Result      := FNotaFiscal;
 end;
 
+function TdmACBrNFe.AddProduto: TDetCollectionItem;
+begin
+  FProduto := FNotaFiscal.NFe.Det.New;
+  Result := FProduto;
+end;
+
 class function TdmACBrNFe.New: iModelFiscalNFeComponentes<TACBrNFe>;
 begin
   Result := Self.Create(nil);
@@ -52,6 +61,11 @@ end;
 function TdmACBrNFe.NotaFiscal: NotaFiscal;
 begin
   Result := FNotaFiscal;
+end;
+
+function TdmACBrNFe.Produto: TDetCollectionItem;
+begin
+  Result := FProduto;
 end;
 
 function TdmACBrNFe._this: TACBrNFe;

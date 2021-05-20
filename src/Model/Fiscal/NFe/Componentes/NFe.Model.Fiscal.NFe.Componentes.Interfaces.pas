@@ -4,7 +4,8 @@ interface
 
 uses
   ACBrNFe,
-  ACBrNFeNotasFiscais;
+  ACBrNFeNotasFiscais,
+  pcnNFe;
 
 type
 
@@ -13,6 +14,8 @@ type
     function _this : T;
     function AddNotaFiscal : NotaFiscal;
     function NotaFiscal : NotaFiscal;
+    function AddProduto : TDetCollectionItem;
+    function Produto : TDetCollectionItem;
   end;
 
   iModelFiscalNFeFactory = interface
