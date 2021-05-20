@@ -37,7 +37,8 @@ uses
   NFe.Model.Fiscal.NFe.Command.TranspVol,
   NFe.Model.Fiscal.NFe.Command.Cobr.Fat,
   NFe.Model.Fiscal.NFe.Command.InfAdic,
-  NFe.Model.Fiscal.NFe.Command.InfAdicObsComp;
+  NFe.Model.Fiscal.NFe.Command.InfAdicObsComp,
+  NFe.Model.Fiscal.NFe.Command.InfAdicObsFisco;
 
 { TModelFiscalNFe }
 
@@ -82,6 +83,7 @@ begin
     .Add(TModelFiscalNFeCommandCobrDup.New(Self))
     .Add(TModelFiscalNFeCommandInfAdic.New(Self))
     .Add(TModelFiscalNFeCommandInfAdicObsComp.New(Self))
+    .Add(TModelFiscalNFeCommandInfAdicObsFisco.New(Self))
   .Execute;
   FComponente._this.NotasFiscais.GerarNFe;
 end;

@@ -20,7 +20,8 @@ uses
   NFe.Model.Fiscal.NFe.Command.TranspVol in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.TranspVol.pas',
   NFe.Model.Fiscal.NFe.Command.Cobr.Fat in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Cobr.Fat.pas',
   NFe.Model.Fiscal.NFe.Command.InfAdic in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.InfAdic.pas',
-  NFe.Model.Fiscal.NFe.Command.InfAdicObsComp in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.InfAdicObsComp.pas';
+  NFe.Model.Fiscal.NFe.Command.InfAdicObsComp in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.InfAdicObsComp.pas',
+  NFe.Model.Fiscal.NFe.Command.InfAdicObsFisco in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.InfAdicObsFisco.pas';
 
 {$R *.res}
 
