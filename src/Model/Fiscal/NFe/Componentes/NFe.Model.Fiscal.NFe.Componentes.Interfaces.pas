@@ -18,6 +18,14 @@ type
     function Produto : TDetCollectionItem;
     function AddDuplicata : TDupCollectionItem;
     function Duplicata : TDupCollectionItem;
+    function AddObsComp : TObsContCollectionItem;
+    function ObsComp : TObsContCollectionItem;
+    function AddObsFisco : TObsFiscoCollectionItem;
+    function ObsFisco : TObsFiscoCollectionItem;
+    function AddPagamento : TPagCollectionItem;
+    function Pagamento : TPagCollectionItem;
+    function AddTranspVol : TVolCollectionItem;
+    function TranspVol : TVolCollectionItem;
   end;
 
   iModelFiscalNFeFactory = interface
