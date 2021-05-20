@@ -42,7 +42,8 @@ uses
   NFe.Model.Fiscal.NFe.Command.Exporta,
   NFe.Model.Fiscal.NFe.Command.Compra,
   NFe.Model.Fiscal.NFe.Command.Pagamento,
-  NFe.Model.Fiscal.NFe.Command.GerarNFe;
+  NFe.Model.Fiscal.NFe.Command.GerarNFe,
+  NFe.Model.Fiscal.NFe.Command.EnviarNFe;
 
 { TModelFiscalNFe }
 
@@ -92,6 +93,7 @@ begin
     .Add(TModelFiscalNFeCommandCompra.New(Self))
     .Add(TModelFiscalNFeCommandPagamento.New(Self))
     .Add(TModelFiscalNFeCommandGerarNFe.New(Self))
+    .Add(TModelFiscalNFeCommandEnviarNFe.New(Self))
   .Execute;
   FComponente._this.NotasFiscais.GerarNFe;
 end;
