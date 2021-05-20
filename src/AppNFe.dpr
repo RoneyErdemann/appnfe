@@ -16,7 +16,8 @@ uses
   NFe.Model.Fiscal.NFe.Command.Dest in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Dest.pas',
   NFe.Model.Fiscal.NFe.Command.Total in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Total.pas',
   NFe.Model.Fiscal.NFe.Command.Transp in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Transp.pas',
-  NFe.Model.Fiscal.NFe.Command.Cobr.Dup in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Cobr.Dup.pas';
+  NFe.Model.Fiscal.NFe.Command.Cobr.Dup in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Cobr.Dup.pas',
+  NFe.Model.Fiscal.NFe.Command.TranspVol in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.TranspVol.pas';
 
 {$R *.res}
 
