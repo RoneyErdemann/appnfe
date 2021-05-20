@@ -29,6 +29,7 @@ uses
   NFe.Model.Fiscal.NFe.Command.Geral,
   NFe.Model.Fiscal.NFe.Command.Ide,
   NFe.Model.Fiscal.NFe.Command.Emit,
+  NFe.Model.Fiscal.NFe.Command.Dest,
   NFe.Model.Fiscal.NFe.Command.Prod;
 
 { TModelFiscalNFe }
@@ -65,6 +66,7 @@ begin
     .Add(TModelFiscalNFeCommandGeral.New(Self))
     .Add(TModelFiscalNFeCommandIde.New(self))
     .Add(TModelFiscalNFeCommandEmitente.New(Self))
+    .Add(TModelFiscalNFeCommandDest.New(Self))
     .Add(TModelFiscalNFeCommandProd.New(Self))
   .Execute;
   FComponente._this.NotasFiscais.GerarNFe;

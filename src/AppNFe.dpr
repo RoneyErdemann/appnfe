@@ -12,7 +12,8 @@ uses
   NFe.Model.Fiscal.NFe.Command.Geral in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Geral.pas',
   NFe.Model.Fiscal.NFe.Command.Ide in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Ide.pas',
   NFe.Model.Fiscal.NFe.Command.Emit in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Emit.pas',
-  NFe.Model.Fiscal.NFe.Command.Prod in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Prod.pas';
+  NFe.Model.Fiscal.NFe.Command.Prod in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Prod.pas',
+  NFe.Model.Fiscal.NFe.Command.Dest in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Dest.pas';
 
 {$R *.res}
 
