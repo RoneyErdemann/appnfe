@@ -26,7 +26,8 @@ uses
   NFe.Model.Fiscal.NFe.Command.Compra in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Compra.pas',
   NFe.Model.Fiscal.NFe.Command.Pagamento in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.Pagamento.pas',
   NFe.Model.Fiscal.NFe.Command.GerarNFe in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.GerarNFe.pas',
-  NFe.Model.Fiscal.NFe.Command.EnviarNFe in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.EnviarNFe.pas';
+  NFe.Model.Fiscal.NFe.Command.EnviarNFe in 'Model\Fiscal\NFe\Command\NFe.Model.Fiscal.NFe.Command.EnviarNFe.pas',
+  NFe.Model.Fiscal.NFe.RegrasFiscais.Interfaces in 'Model\Fiscal\NFe\RegrasFiscais\NFe.Model.Fiscal.NFe.RegrasFiscais.Interfaces.pas';
 
 {$R *.res}
 
