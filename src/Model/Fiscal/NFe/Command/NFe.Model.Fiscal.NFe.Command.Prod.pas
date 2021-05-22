@@ -23,7 +23,9 @@ implementation
 
 uses
   pcnConversaoNFe,
-  pcnConversao;
+  pcnConversao,
+  NFe.Model.Fiscal.NFe.RegrasFiscais.ICMS.RegineNormal,
+  NFe.Model.Fiscal.NFe.RegrasFiscais.ICMS.Simples;
 
 { TModelFiscalNFeCommandProd }
 
@@ -36,6 +38,7 @@ end;
 constructor TModelFiscalNFeCommandProd.Create(Parent : iModelFiscalNFe);
 begin
   FParent := Parent;
+  Self.Accept(TModelFiscalNFeRegrasFiscaisICMSRegimeNormal.New);
 end;
 
 destructor TModelFiscalNFeCommandProd.Destroy;
