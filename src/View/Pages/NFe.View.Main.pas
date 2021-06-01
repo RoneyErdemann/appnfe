@@ -16,6 +16,7 @@ uses
 type
   TForm1 = class(TForm)
     Button1: TButton;
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -27,6 +28,14 @@ var
 
 implementation
 
+uses
+  NFe.Model.Fiscal.NFe;
+
 {$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  TModelFiscalNFe.New.Gerar;
+end;
 
 end.

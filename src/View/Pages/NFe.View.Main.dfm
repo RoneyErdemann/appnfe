@@ -15,11 +15,12 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Button1: TButton
-    Left = 168
-    Top = 184
+    Left = 328
+    Top = 88
     Width = 75
     Height = 25
-    Caption = 'Button1'
+    Caption = 'Gerar'
     TabOrder = 0
+    OnClick = Button1Click
   end
 end
